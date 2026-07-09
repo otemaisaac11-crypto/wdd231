@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Course Home Page</title>
+    <meta name="description" content="Course home page for WDD 231: Web Frontend Development I, showcasing prerequisite knowledge in HTML, CSS, and JavaScript.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Replace with your actual SVG logo path -->
+        <img src="images/logo.svg" alt="Site Logo" width="50" height="50">
+        <span>Your Name</span>
+        <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="card">
+            <h2>Course Work</h2>
+            <!-- Add course content here -->
+        </section>
+
+        <section class="card">
+            <h2>Information</h2>
+            <!-- Add info content here -->
+        </section>
+
+        <section class="card">
+            <h2>Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+            <div id="course-container">
+                <!-- Courses will be dynamically rendered here by JavaScript -->
+            </div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Your Name | Your State/Country</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
