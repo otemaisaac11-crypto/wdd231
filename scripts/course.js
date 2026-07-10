@@ -11,7 +11,7 @@ const container = document.getElementById('course-container');
 const creditsDisplay = document.getElementById('total-credits');
 
 function displayCourses(filteredCourses) {
-    container.innerHTML = ""; // Clear existing output
+    container.innerHTML = ""; 
     
     filteredCourses.forEach(course => {
         const card = document.createElement('div');
@@ -20,12 +20,12 @@ function displayCourses(filteredCourses) {
         container.appendChild(card);
     });
 
-    // Calculate total credits displayed using reduce
+    
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     creditsDisplay.textContent = `Total Credits: ${totalCredits}`;
 }
 
-// Event Listeners for Filter Buttons
+
 document.getElementById('all-btn').addEventListener('click', () => displayCourses(courses));
 document.getElementById('wdd-btn').addEventListener('click', () => {
     const wddCourses = courses.filter(course => course.department === "WDD");

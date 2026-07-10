@@ -4,7 +4,7 @@
     }
 
     nav ul {
-        display: flex; /* Horizontal nav for large screens */
+        display: flex; 
         justify-content: center;
     }
 
