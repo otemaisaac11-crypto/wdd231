@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none; /* Hide hamburger */
+    }
+
+    nav ul {
+        display: flex; /* Horizontal nav for large screens */
+        justify-content: center;
+    }
+
+    #course-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
