@@ -26,12 +26,12 @@ function displayCourses(filteredCourses) {
 }
 
 
-document.getElementById('all-btn').addEventListener('click', () => displayCourses(courses));
-document.getElementById('wdd-btn').addEventListener('click', () => {
+document.getElementById('all').addEventListener('click', () => displayCourses(courses));
+document.getElementById('wdd').addEventListener('click', () => {
     const wddCourses = courses.filter(course => course.department === "WDD");
     displayCourses(wddCourses);
 });
-document.getElementById('cse-btn').addEventListener('click', () => {
+document.getElementById('cse').addEventListener('click', () => {
     const cseCourses = courses.filter(course => course.department === "CSE");
     displayCourses(cseCourses);
 });
