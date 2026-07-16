@@ -1,0 +1,23 @@
+{
+  "family_name": "Otema",
+  "move_in_date": "2026-05-12",
+  "number_of_people": 3,
+  "visited_by_bishopric": false,
+  "family_members": [
+    {
+      "name": "John Otema",
+      "gender": "Male",
+      "birthdate": "1988-03-14"
+    },
+    {
+      "name": "Sarah Otema",
+      "gender": "Female",
+      "birthdate": "1990-11-22"
+    },
+    {
+      "name": "Tommy Otema",
+      "gender": "Male",
+      "birthdate": "2018-07-09"
+    }
+  ]
+}
