@@ -1,3 +1,12 @@
+const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
+const cards = document.querySelector('#cards');
+
+async function getProphetData() {
+  const response = await fetch(url);
+  const data = await response.json();
+  displayProphets(data.prophets);
+}
+
 const displayProphets = (prophets) => {
   prophets.forEach((prophet) => {
     // Create elements to add to the div.cards element
@@ -14,7 +23,7 @@ const displayProphets = (prophets) => {
     birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
     birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
 
-    // Build the image element - strictly use lowercase 'imageurl'
+    // Build the image element (strictly lowercase 'imageurl' from JSON)
     portrait.setAttribute('src', prophet.imageurl);
     portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
     portrait.setAttribute('loading', 'lazy');
@@ -27,15 +36,10 @@ const displayProphets = (prophets) => {
     card.appendChild(birthPlace);
     card.appendChild(portrait);
 
-    // Append the created elements to the card section
-    card.appendChild(fullName);
-    card.appendChild(birthDate);
-    card.appendChild(birthPlace);
-    card.appendChild(portrait);
-
-    // Append the card to the container
+    // Append the card to the cards container
     cards.appendChild(card);
   });
 }
 
+// Call the function to fetch and display the data
 getProphetData();
