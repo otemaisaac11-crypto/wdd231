@@ -1,0 +1,39 @@
+/* Default grid view layout on small screens (single column stack) */
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.member-card img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* List view style override */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list-view .member-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+/* Hide images in list view to keep it compact */
+.list-view .member-card img, .list-view .member-card .extra-info {
+    display: none;
+}

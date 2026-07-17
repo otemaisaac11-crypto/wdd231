@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory</title>
+    <meta name="description" content="Chamber of Commerce business directory page.">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/og-share-image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Discover local businesses in our community chamber directory.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 640px)">
+
+    <!-- Script -->
+    <script src="scripts/directory.js" defer></script><body>
+
+</head>
+ <body>   
+    <header>
+        <img src="images/logo.png" alt="Chamber Logo">
+        <h1>Community Chamber of Commerce</h1>
+        <nav>
+            <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="menu-controls">
+            <button id="grid" aria-label="Grid View">Grid View</button>
+            <button id="list" aria-label="List View">List View</button>
+        </div>
+        <article id="members-container" class="grid-view">
+            <!-- JS inserts member cards here -->
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Your Name | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
+

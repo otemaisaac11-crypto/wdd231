@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Tech Solutions Inc.",
+    "addresses": "123 Innovation Way, Suite A",
+    "phone": "(555) 019-2834",
+    "website": "https://example.com",
+    "image": "tech-solutions.png",
+    "membershipLevel": 3,
+    "otherInfo": "Expert IT and software consulting."
+  },
+  {
+    "name": "Main Street Bakery",
+    "addresses": "456 Main St",
+    "phone": "(555) 014-9876",
+    "website": "https://example.com",
+    "image": "main-bakery.png",
+    "membershipLevel": 1,
+    "otherInfo": "Fresh pastries and sourdough daily."
+  }
+]

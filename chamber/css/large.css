@@ -1,0 +1,6 @@
+@media (min-width: 640px) {
+    /* Grid view gets multiple columns on larger viewports */
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
