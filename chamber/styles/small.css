@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-/* Default grid view layout on small screens (single column stack) */
+
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -21,7 +21,7 @@ body {
     height: auto;
 }
 
-/* List view style override */
+
 .list-view {
     display: flex;
     flex-direction: column;
@@ -36,12 +36,12 @@ body {
     padding: 0.5rem;
 }
 
-/* Hide images in list view to keep it compact */
+
 .list-view .member-card img, .list-view .member-card .extra-info {
     display: none;
 }
 
-/* Hamburger Menu Styles for Mobile */
+
 #menu {
     font-size: 1.5rem;
     background: none;
@@ -50,7 +50,7 @@ body {
     padding: 0.5rem;
 }
 
-/* Hide the menu links by default on small screens */
+
 .navigation {
     display: none;
     list-style: none;
@@ -59,7 +59,7 @@ body {
     flex-direction: column;
 }
 
-/* Display the menu links vertically when the menu button is clicked */
+
 .navigation.open {
     display: flex;
 }

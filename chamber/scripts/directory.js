@@ -43,7 +43,7 @@ function displayMembers(members) {
     });
 }
 
-// Toggle Views (Grid vs List)
+// Toggle Views 
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
