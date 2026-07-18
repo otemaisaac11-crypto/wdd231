@@ -68,3 +68,13 @@
     color: #333;
     text-align: center;
 }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+    }
