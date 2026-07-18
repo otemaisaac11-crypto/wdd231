@@ -4,7 +4,7 @@
     "addresses": "123 Innovation Way, Suite A",
     "phone": "(555) 019-2834",
     "website": "https://example.com",
-    "image": "tech-solutions.png",
+    "image": "tech-solutions.avif",
     "membershipLevel": 3,
     "otherInfo": "Expert IT and software consulting."
   },
@@ -13,8 +13,54 @@
     "addresses": "456 Main St",
     "phone": "(555) 014-9876",
     "website": "https://example.com",
-    "image": "main-bakery.png",
+    "image": "main-bakery.avif",
     "membershipLevel": 1,
     "otherInfo": "Fresh pastries and sourdough daily."
+  },
+  {
+    "name": "Green Valley Landscaping",
+    "addresses": "789 Elm Road",
+    "phone": "(555) 012-3456",
+    "website": "https://greenvalleylandscape.example.com",
+    "image": "green-valley.avif",
+    "membershipLevel": 2,
+    "otherInfo": "Residential and commercial lawn care."
+  },
+  {
+    "name": "Apex Marketing Group",
+    "addresses": "555 Corporate Center Dr",
+    "phone": "(555) 017-4321",
+    "website": "https://apexmarketing.example.com",
+    "image": "apex-marketing.avif",
+    "membershipLevel": 3,
+    "otherInfo": "Digital advertising and brand strategy."
+  },
+  {
+    "name": "Downtown Auto Repair",
+    "addresses": "101 Mechanics Ln",
+    "phone": "(555) 015-8899",
+    "website": "https://downtownauto.example.com",
+    "image": "downtown-auto.avif",
+    "membershipLevel": 1,
+    "otherInfo": "Full-service auto maintenance and repairs."
+  },
+  {
+    "name": "Summit Dental Care",
+    "addresses": "302 Health Parkway, Suite 200",
+    "phone": "(555) 011-2233",
+    "website": "https://summitdental.example.com",
+    "image": "summit-dental.avif",
+    "membershipLevel": 2,
+    "otherInfo": "Family dentistry and oral health care."
+  },
+  {
+    "name": "Beacon Bookshop",
+    "addresses": "12 Library Square",
+    "phone": "(555) 016-5544",
+    "website": "https://beaconbooks.example.com",
+    "image": "beacon-books.avif",
+    "membershipLevel": 1,
+    "otherInfo": "New, used, and rare community bookstore."
   }
+
 ]

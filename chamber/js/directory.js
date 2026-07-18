@@ -56,5 +56,14 @@ listButton.addEventListener("click", () => {
     container.classList.add("list-view");
     container.classList.remove("grid-view");
 });
+// Toggle responsive navigation menu
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    menuButton.classList.toggle("open");
+});
+
 
 getMembers();
