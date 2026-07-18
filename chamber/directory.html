@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce - Directory</title>
     <meta name="description" content="Chamber of Commerce business directory page.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Otema Isaac">
+    <img rel="icon" href="images/logo.svg" type="image/svg+xml">
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://otemaisaac11-crypto.github.io/wdd231/chamber/images/og-share-image.jpg">
+    <meta property="og:image" content="images/logo.svg">
     <meta property="og:url" content="https://otemaisaac11-crypto.github.io/wdd231/chamber/directory.html">
     <meta property="og:description" content="Discover local businesses in our community chamber directory.">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 640px)">
 
     <!-- Script -->
-    <script src="scripts/directory.js" defer></script>
+    <script src="js/directory.js" defer></script>
 
 </head>
  <body>   
     <header>
-        <img src="images/logo.png" alt="Chamber Logo">
+        <img src="images/logo.svg" alt="Chamber Logo">
         <h1>Community Chamber of Commerce</h1>
         <nav>
             <button id="menu" aria-label="Toggle Menu">&#9776;</button>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section class="directory-intro">
+            <h2>Member Directory</h2>
+            <p>Browse our local chamber members and switch between grid and list views to explore each business.</p>
+        </section>
         <div class="menu-controls">
             <button id="grid" aria-label="Grid View">Grid View</button>
             <button id="list" aria-label="List View">List View</button>
@@ -51,7 +56,8 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Otema Isaac | WDD 231</p>
+        <p>Contact: info@otemaisaac.com | 0790 340 992</p>
+        <p>&copy; <span id="currentyear"></span> Otema Isaac | WDD 231</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
