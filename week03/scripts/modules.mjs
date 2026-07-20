@@ -1,3 +1,4 @@
+
 // 1. Import your default and named modules at the very top
 import byuiCourse from './course.mjs';
 import { setSectionSelection } from './sections.mjs';
@@ -20,5 +21,3 @@ document.querySelector("#dropStudent").addEventListener("click", function () {
 setTitle(byuiCourse);
 setSectionSelection(byuiCourse.sections);
 renderSections(byuiCourse.sections);
-
-({ setSectionSelection }, { setTitle, renderSections })
