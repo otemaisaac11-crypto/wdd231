@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Home</title>
+    <meta name="description" content="Browse our comprehensive local business directory to discover and support members of our Chamber of Commerce.">
+    <meta name="author" content="Otema Isaac">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+
+    
+    <meta property="og:title" content="Community Chamber of Commerce Business Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://otemaisaac11-crypto.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://otemaisaac11-crypto.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Discover local businesses in our community chamber directory.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 640px)">
+
+
+    
+    <script src="chamber/scripts/home.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="Chamber Logo">
+        <nav>
+            <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <h1>Community Chamber of Commerce</h1>
+
+        <section class="hero">
+            <img src="images/hero-image.webp" alt="Chamber of Commerce Hero image">
+            
+            <div class="hero-cta">
+            <p>Join our growing business community!</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+        </section>
+
+        <div class="home-grid">
+        <!-- 3. Current Events Section -->
+        <section class="card events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Annual Expo:</strong> Nov 15th @ 10 AM</li>
+                <li><strong>Networking Luncheon:</strong> Nov 22nd @ 12 PM</li>
+            </ul>
+        </section>
+
+        <section class="card weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info"></div>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast-info"></div>
+         
+        </section>
+
+        
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards"></div>
+        </section>
+    </div>
+
+        
+    </main>
+
+    <footer>
+        <p>Contact: otemaisaac0@gmail.com | 0790 340 992</p>
+        <p>&copy; <span id="currentyear"></span> Otema Isaac | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -15,4 +15,25 @@
         gap: 1.5rem;
     }
 
-}
+
+   /* 1. Multi-Column Layout for Home Cards */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Creates a 2-column layout */
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    /* 2. Spotlight Section Spanning Full Width */
+    .spotlights {
+        grid-column: 1 / -1; /* Spans across both columns */
+    }
+
+    /* 3. Display Spotlight Cards Side-by-Side */
+    #spotlight-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+} 
+
