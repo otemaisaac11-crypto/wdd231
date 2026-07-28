@@ -1,4 +1,6 @@
-@media (min-width: 640px) {
+@media (min-width: 640px){
+ 
+
 
     .grid-view {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -61,3 +63,4 @@
         margin: 2rem auto;
         padding: 2rem;
     }
+}
