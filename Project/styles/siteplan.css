@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F9FA;
+    color: #1F2937;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body>header,
+body>footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #1B4D3E;
+    color: #F8F9FA;
+}
+
+.eyebrow {
+    margin: 0 0 0.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #D97706;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #1B4D3E;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.page-header {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.subheading {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #D97706;
+}
+
+main {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+}
+
+section {
+    background: #ffffff;
+    border: 1px solid rgba(27, 77, 62, 0.16);
+    border-radius: 18px;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+section p,
+section li {
+    font-size: 1rem;
+}
+
+ul,
+ol {
+    padding-left: 1.4rem;
+}
+
+.color-card,
+.type-card,
+.wireframe-card {
+    background: #F8F9FA;
+    border: 1px solid rgba(27, 77, 62, 0.16);
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.color-card.primary {
+    border-color: #1B4D3E;
+}
+
+.color-card.secondary {
+    border-color: #D97706;
+}
+
+.color-card.neutral {
+    border-color: #94A3B8;
+}
+
+code {
+    background: #e5e7eb;
+    padding: 0.15rem 0.35rem;
+    border-radius: 6px;
+    color: #1F2937;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wireframe-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.wireframe-drawing {
+    background: white;
+    border: 1px solid #94A3B8;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.wf-bar,
+.wf-block,
+.wf-row {
+    background: #f3f4f6;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.wf-row.two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+@media (min-width: 760px) {
+    .wireframe-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wf-row.two-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+footer {
+    font-size: 0.95rem;
+}
