@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Thank You</title>
+    <meta name="description"
+        content="Thank you for your chamber membership application. Review the details submitted in your membership request.">
+    <meta name="author" content="Otema Isaac">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 640px)">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="Chamber Logo">
+        <nav>
+            <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you-summary" aria-labelledby="thank-you-heading">
+            <h1 id="thank-you-heading">Thank You for Applying</h1>
+            <p>We have received your application. Below are the details you submitted:</p>
+
+            <dl>
+                <div>
+                    <dt>First Name</dt>
+                    <dd id="displayFirstName"></dd>
+                </div>
+                <div>
+                    <dt>Last Name</dt>
+                    <dd id="displayLastName"></dd>
+                </div>
+                <div>
+                    <dt>Email</dt>
+                    <dd id="displayEmail"></dd>
+                </div>
+                <div>
+                    <dt>Mobile Number</dt>
+                    <dd id="displayMobile"></dd>
+                </div>
+                <div>
+                    <dt>Organization</dt>
+                    <dd id="displayOrganization"></dd>
+                </div>
+                <div>
+                    <dt>Submitted On</dt>
+                    <dd id="displayTimestamp"></dd>
+                </div>
+            </dl>
+
+            <p id="fallbackMessage" class="fallback-message">If you reached this page directly, your submission data is
+                not available.</p>
+            <a href="join.html" class="cta-button">Submit Another Application</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: otemaisaac0@gmail.com | 0790 340 992</p>
+        <p>&copy; <span id="currentyear"></span> Otema Isaac | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

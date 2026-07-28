@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Join</title>
+    <meta name="description"
+        content="Apply to join the Community Chamber of Commerce and select the membership level that fits your organization.">
+    <meta name="author" content="Otema Isaac">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 640px)">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="Chamber Logo">
+        <nav>
+            <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Apply to Join the Chamber</h1>
+        <p class="intro-text">Complete the membership application form below and choose the level that best supports
+            your business or nonprofit.</p>
+
+        <div class="join-layout">
+            <section class="join-form" aria-labelledby="application-heading">
+                <h2 id="application-heading">Membership Application</h2>
+                <form method="get" action="thankyou.html">
+                    <label for="firstName">First Name
+                        <input type="text" id="firstName" name="firstName" title="Applicant first name"
+                            autocomplete="given-name" required>
+                    </label>
+
+                    <label for="lastName">Last Name
+                        <input type="text" id="lastName" name="lastName" title="Applicant last name"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label for="title">Organizational Title
+                        <input type="text" id="title" name="title" title="Job title at the organization"
+                            autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"
+                            placeholder="e.g. Community Relations" required>
+                    </label>
+
+                    <label for="email">Email Address
+                        <input type="email" id="email" name="email" title="Applicant email address" autocomplete="email"
+                            placeholder="name@example.com" required>
+                    </label>
+
+                    <label for="mobile">Mobile Phone Number
+                        <input type="tel" id="mobile" name="mobile" title="Applicant mobile phone number"
+                            autocomplete="tel" required>
+                    </label>
+
+                    <label for="organization">Business / Organization Name
+                        <input type="text" id="organization" name="organization"
+                            title="Name of the business or organization" autocomplete="organization" required>
+                    </label>
+
+                    <label for="membershipLevel">Membership Level
+                        <select id="membershipLevel" name="membershipLevel" title="Select a membership level" required>
+                            <option value="np">NP Membership (No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">Organization Description
+                        <textarea id="description" name="description" title="Describe your business or organization"
+                            rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <section class="membership-cards" aria-label="Membership levels">
+                <article class="membership-card level-np">
+                    <h3>NP Membership</h3>
+                    <p>Nonprofit organizations may join with no membership fee and receive basic profile exposure.</p>
+                    <a href="#" class="card-link" data-dialog="npModal">More info</a>
+                </article>
+
+                <article class="membership-card level-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Bronze members receive event invitations, newsletter inclusion, and local promotion.</p>
+                    <a href="#" class="card-link" data-dialog="bronzeModal">More info</a>
+                </article>
+
+                <article class="membership-card level-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Silver level includes featured spotlight placement, training access, and event discounts.</p>
+                    <a href="#" class="card-link" data-dialog="silverModal">More info</a>
+                </article>
+
+                <article class="membership-card level-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Gold members enjoy premium advertising, priority event sponsorship, and extended networking.</p>
+                    <a href="#" class="card-link" data-dialog="goldModal">More info</a>
+                </article>
+            </section>
+        </div>
+
+        <dialog id="npModal" class="membership-modal" aria-labelledby="np-title" aria-describedby="np-description">
+            <h3 id="np-title">NP Membership Benefits</h3>
+            <p id="np-description">A great fit for nonprofits that want to build connections while keeping membership
+                costs low. Includes outreach support, event listings, and community visibility on chamber pages.</p>
+            <button class="close" type="button">Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal" class="membership-modal" aria-labelledby="bronze-title"
+            aria-describedby="bronze-description">
+            <h3 id="bronze-title">Bronze Membership Benefits</h3>
+            <p id="bronze-description">Bronze members receive regular event invitations, listings in the member
+                directory, and inclusion in one featured newsletter story.</p>
+            <button class="close" type="button">Close</button>
+        </dialog>
+
+        <dialog id="silverModal" class="membership-modal" aria-labelledby="silver-title"
+            aria-describedby="silver-description">
+            <h3 id="silver-title">Silver Membership Benefits</h3>
+            <p id="silver-description">Silver membership adds spotlight placement on the home page, exclusive training
+                sessions, and discounted event sponsorship opportunities.</p>
+            <button class="close" type="button">Close</button>
+        </dialog>
+
+        <dialog id="goldModal" class="membership-modal" aria-labelledby="gold-title"
+            aria-describedby="gold-description">
+            <h3 id="gold-title">Gold Membership Benefits</h3>
+            <p id="gold-description">Gold level delivers premium advertising, priority event sponsorship, VIP networking
+                access, and enhanced promotional placement across chamber communications.</p>
+            <button class="close" type="button">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>Contact: otemaisaac0@gmail.com | 0790 340 992</p>
+        <p>&copy; <span id="currentyear"></span> Otema Isaac | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
