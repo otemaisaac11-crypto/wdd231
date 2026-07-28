@@ -1,5 +1,5 @@
-@media (min-width: 640px){
- 
+@media (min-width: 640px) {
+
 
 
     .grid-view {
@@ -42,8 +42,6 @@
 
     .join-layout {
         grid-template-columns: 2fr 1.2fr;
-        gap: 2rem;
-        padding: 2rem;
     }
 
     .join-form,
@@ -51,16 +49,7 @@
         padding: 1.5rem;
     }
 
-    .membership-cards {
-        gap: 1.25rem;
-    }
-
     .membership-card {
         min-height: 190px;
-    }
-
-    .thank-you-summary {
-        margin: 2rem auto;
-        padding: 2rem;
     }
 }

@@ -262,6 +262,27 @@ h1 {
     gap: 0.8rem;
 }
 
+@media (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .join-layout {
+        grid-template-columns: 2fr 1.2fr;
+    }
+
+    .membership-card {
+        min-height: 190px;
+    }
+}
+
 .thank-you-summary dt {
     font-weight: 700;
     color: #12306e;
