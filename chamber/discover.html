@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Discover</title>
+    <meta name="description"
+        content="Discover local places of interest through the Chamber's curated gallery of community spots.">
+    <meta name="author" content="Otema Isaac">
+    <meta property="og:title" content="Chamber Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://otemaisaac11-crypto.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://otemaisaac11-crypto.github.io/wdd231/chamber/discover.html">
+    <meta property="og:description"
+        content="Explore the Chamber's discover page and learn about eight local attractions and businesses.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script type="module" src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="Chamber Logo">
+        <nav>
+            <button id="menu" aria-label="Toggle Menu">☰</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="discover-intro" aria-labelledby="discover-heading">
+            <h1 id="discover-heading">Chamber Discover</h1>
+            <p>Explore eight local places of interest supported by the Chamber. Each card includes the location,
+                address, description and a Learn More button.</p>
+            <p id="visitMessage" class="visit-message" aria-live="polite"></p>
+        </section>
+
+        <section class="discover-gallery" aria-label="Discover local places">
+            <div id="discover-grid" class="discover-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: otemaisaac0@gmail.com | 0790 340 992</p>
+        <p>&copy; <span id="currentyear"></span> Otema Isaac | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
