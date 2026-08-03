@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uganda Destinations | Explore Uganda</title>
+    <meta name="description"
+        content="Browse Uganda destinations including national parks, waterfalls, lakes, and cultural heritage sites." />
+    <meta name="author" content="Otema Isaac" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/final.css" />
+    <script type="module" src="scripts/destinations.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-mark">U</div>
+                <span>Explore Uganda</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="destinations.html">Destinations</a></li>
+                    <li><a href="planner.html">Travel Planner</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <header class="page-header">
+            <div class="content">
+                <p class="eyebrow">Destination Guide</p>
+                <h1>Discover Uganda</h1>
+                <p class="subheading">From wildlife-rich savannas and mountain forests to lakes, waterfalls, and
+                    heritage sites, Uganda offers a layered journey of wonder.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="filter-bar" aria-label="Destination filters">
+                <button class="filter-pill active" data-filter="All" type="button">All</button>
+                <button class="filter-pill" data-filter="Wildlife" type="button">Wildlife</button>
+                <button class="filter-pill" data-filter="Adventure" type="button">Adventure</button>
+                <button class="filter-pill" data-filter="Water" type="button">Water</button>
+                <button class="filter-pill" data-filter="Culture" type="button">Culture</button>
+            </div>
+            <div id="destinations-grid" class="destinations-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <dialog id="destination-modal" aria-labelledby="modal-title">
+        <div id="modal-content" class="modal-content">
+            <h2 id="modal-title" class="sr-only">Destination details</h2>
+        </div>
+
+        <footer class="site-footer">
+            <div class="site-footer-inner">
+                <div>
+                    <p>&copy; <span id="year"></span> Explore Uganda</p>
+                </div>
+                <div class="footer-links">
+                    <a href="attributions.html">Attributions</a>
+                    <a href="index.html">Home</a>
+                    <a href="planner.html">Planner</a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

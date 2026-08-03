@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Uganda | Discover the Pearl of Africa</title>
+    <meta name="description"
+        content="Explore Uganda is a travel guide for discovering national parks, cultural heritage, waterfalls, and adventure experiences across the country." />
+    <meta name="author" content="Otema Isaac" />
+    <meta property="og:title" content="Explore Uganda | Discover the Pearl of Africa" />
+    <meta property="og:description"
+        content="Plan your travel to Uganda with destination highlights, local tips, and unforgettable experiences." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://example.com/project/index.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/final.css" />
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-mark">U</div>
+                <span>Explore Uganda</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="planner.html">Travel Planner</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Adventure Awaits</span>
+                <h1>Find your next unforgettable Uganda experience.</h1>
+                <p>From misty mountain gorilla tracks to sunlit lakes and vibrant cultural heritage, Uganda offers a
+                    remarkable journey for every traveler.</p>
+                <div class="featured-cta">
+                    <a class="primary-btn" href="destinations.html">Explore destinations</a>
+                    <a class="secondary-btn" href="planner.html">Build a trip</a>
+                </div>
+            </div>
+            <div class="hero-image" aria-label="Uganda scenery">
+                <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=800&q=80"
+                    alt="Wild animals in a Ugandan national park during a scenic safari" loading="eager"
+                    fetchpriority="high" width="800" height="900" />
+                <div class="float-panel">
+                    <strong>Best time</strong>
+                    <span>June to September</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>Why visit Uganda?</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">🦍</div>
+                    <h3>Wildlife encounters</h3>
+                    <p>Track mountain gorillas, see big game, and witness dramatic bird and animal life in protected
+                        national parks.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🏞️</div>
+                    <h3>Scenic landscapes</h3>
+                    <p>From highland lakes to waterfalls and volcanic peaks, Uganda’s geography rewards every kind of
+                        explorer.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🧭</div>
+                    <h3>Culture and heritage</h3>
+                    <p>Discover royal traditions, local markets, and vibrant communities that preserve Uganda’s rich
+                        identity.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>Travel highlights</h2>
+            </div>
+            <div class="quick-grid">
+                <div class="stat"><span class="stat-number">15+</span><span>featured places</span></div>
+                <div class="stat"><span class="stat-number">3</span><span>core regions</span></div>
+                <div class="stat"><span class="stat-number">1</span><span>adventure path</span></div>
+                <div class="stat"><span class="stat-number">24/7</span><span>trip inspiration</span></div>
+            </div>
+        </section>
+
+        <section class="section trip-layout">
+            <div class="form-panel">
+                <div class="section-heading">
+                    <h2>Plan your trip</h2>
+                </div>
+                <form id="trip-form" action="thanks.html" method="get">
+                    <div class="form-grid">
+                        <div>
+                            <label for="name">Full name</label>
+                            <input id="name" name="name" type="text" required />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required />
+                        </div>
+                        <div>
+                            <label for="trip-type">Trip style</label>
+                            <select id="trip-type" name="trip-type">
+                                <option value="Wildlife">Wildlife Safari</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Culture">Culture and heritage</option>
+                                <option value="Family">Family trip</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="duration">Days</label>
+                            <input id="duration" name="duration" type="number" min="3" max="21" value="7" required />
+                        </div>
+                        <div class="full-width">
+                            <label for="notes">Travel interests</label>
+                            <textarea id="notes" name="notes"
+                                placeholder="Tell us what you want to see, do, and experience in Uganda."></textarea>
+                        </div>
+                        <div class="full-width">
+                            <button class="primary-btn" type="submit">Submit trip request</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="side-panel">
+                <div class="section-heading">
+                    <h2>Helpful tips</h2>
+                </div>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3>Visa and entry</h3>
+                        <p>Check requirements before departure and keep your passport valid for at least six months.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Travel safety</h3>
+                        <p>Use reputable drivers, confirm park bookings, and keep emergency contacts accessible while
+                            moving between regions.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Currency</h3>
+                        <p>UGX is widely used, though cards are accepted in major cities and tourist lodges.</p>
+                    </article>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div>
+                <p>&copy; <span id="year"></span> Explore Uganda</p>
+            </div>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="planner.html">Planner</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

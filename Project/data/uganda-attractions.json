@@ -1,0 +1,257 @@
+[
+    {
+        "id": 1,
+        "name": "Bwindi Impenetrable National Park",
+        "region": "Southwest",
+        "category": "Wildlife",
+        "description": "A lush montane forest known for rare mountain gorillas and dramatic trekking routes through dense vegetation.",
+        "bestTime": "June to September",
+        "highlight": "Gorilla trekking",
+        "estimatedCost": "$700+",
+        "distance": "530 km",
+        "activities": [
+            "Gorilla Trekking",
+            "Forest Walks",
+            "Birdwatching"
+        ],
+        "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Queen Elizabeth National Park",
+        "region": "Western",
+        "category": "Wildlife",
+        "description": "A biodiversity hotspot where elephants, lions, hippos, and tree-climbing lions can be spotted around crater lakes.",
+        "bestTime": "December to February",
+        "highlight": "Game drives",
+        "estimatedCost": "$550+",
+        "distance": "410 km",
+        "activities": [
+            "Game Drives",
+            "Boat Safaris",
+            "Nature Trails"
+        ],
+        "image": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 3,
+        "name": "Murchison Falls",
+        "region": "North",
+        "category": "Adventure",
+        "description": "A powerful waterfall where the Nile squeezes through a narrow gorge before crashing into the river below.",
+        "bestTime": "June to October",
+        "highlight": "River launch cruise",
+        "estimatedCost": "$480+",
+        "distance": "360 km",
+        "activities": [
+            "Launch Cruise",
+            "Hiking",
+            "Wildlife Viewing"
+        ],
+        "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 4,
+        "name": "Kidepo Valley National Park",
+        "region": "North East",
+        "category": "Wildlife",
+        "description": "Remote and dramatic, Kidepo offers wide savannas, rugged mountains, and a rare sense of wilderness.",
+        "bestTime": "November to March",
+        "highlight": "Desert-like landscapes",
+        "estimatedCost": "$620+",
+        "distance": "600 km",
+        "activities": [
+            "Game Drives",
+            "Sunset Viewing",
+            "Cultural Tours"
+        ],
+        "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 5,
+        "name": "Lake Bunyonyi",
+        "region": "Southwest",
+        "category": "Water",
+        "description": "A calm lake with terraced hills, island communities, and some of the most scenic canoe journeys in East Africa.",
+        "bestTime": "June to September",
+        "highlight": "Canoeing and islands",
+        "estimatedCost": "$230+",
+        "distance": "460 km",
+        "activities": [
+            "Canoeing",
+            "Island Tours",
+            "Photography"
+        ],
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 6,
+        "name": "Kibale Forest National Park",
+        "region": "Western",
+        "category": "Wildlife",
+        "description": "Famous for chimpanzee tracking, moist rainforest, and a rich variety of primates and colorful birdlife.",
+        "bestTime": "June to August",
+        "highlight": "Chimpanzee tracking",
+        "estimatedCost": "$500+",
+        "distance": "330 km",
+        "activities": [
+            "Chimp Tracking",
+            "Nature Walks",
+            "Birding"
+        ],
+        "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 7,
+        "name": "Source of the Nile",
+        "region": "Central",
+        "category": "Culture",
+        "description": "A historic and spiritual landmark often visited for river views, local storytelling, and cultural discovery.",
+        "bestTime": "Year-round",
+        "highlight": "River heritage",
+        "estimatedCost": "$120+",
+        "distance": "250 km",
+        "activities": [
+            "Heritage Tours",
+            "Boat Rides",
+            "Local Dining"
+        ],
+        "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 8,
+        "name": "Kasubi Tombs",
+        "region": "Central",
+        "category": "Culture",
+        "description": "A royal burial site recognized for its sacred heritage and intricate traditional architecture.",
+        "bestTime": "Year-round",
+        "highlight": "Royal heritage",
+        "estimatedCost": "$90+",
+        "distance": "8 km",
+        "activities": [
+            "Cultural Tours",
+            "History Learning",
+            "Photography"
+        ],
+        "image": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 9,
+        "name": "Sipi Falls",
+        "region": "Eastern",
+        "category": "Adventure",
+        "description": "A dramatic waterfall cluster surrounded by jagged cliffs, coffee farms, and breathtaking hiking trails.",
+        "bestTime": "June to December",
+        "highlight": "Waterfall hikes",
+        "estimatedCost": "$180+",
+        "distance": "330 km",
+        "activities": [
+            "Hiking",
+            "Coffee Tours",
+            "Photography"
+        ],
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 10,
+        "name": "Mgahinga Gorilla National Park",
+        "region": "Southwest",
+        "category": "Wildlife",
+        "description": "An intimate park at the meeting point of Uganda, Rwanda, and the Democratic Republic of the Congo.",
+        "bestTime": "June to September",
+        "highlight": "Mountain trekking",
+        "estimatedCost": "$700+",
+        "distance": "510 km",
+        "activities": [
+            "Gorilla Treks",
+            "Volcano Hikes",
+            "Birding"
+        ],
+        "image": "https://images.unsplash.com/photo-1501555088652-021fa9c939fd?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 11,
+        "name": "Jinja",
+        "region": "Eastern",
+        "category": "Adventure",
+        "description": "Known as the adventure capital of Uganda, Jinja invites visitors to enjoy white-water rafting and Nile views.",
+        "bestTime": "June to September",
+        "highlight": "White-water rafting",
+        "estimatedCost": "$260+",
+        "distance": "80 km",
+        "activities": [
+            "Rafting",
+            "Kayaking",
+            "Ziplining"
+        ],
+        "image": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 12,
+        "name": "Kabalega Falls",
+        "region": "North",
+        "category": "Water",
+        "description": "A scenic waterfall experience offering dramatic rock formations and quiet river access near Murchison.",
+        "bestTime": "June to October",
+        "highlight": "Hidden viewpoints",
+        "estimatedCost": "$110+",
+        "distance": "370 km",
+        "activities": [
+            "Picnics",
+            "Sightseeing",
+            "Photography"
+        ],
+        "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 13,
+        "name": "Fort Portal",
+        "region": "Western",
+        "category": "Culture",
+        "description": "A charming town on the edge of the Rwenzori foothills, celebrated for its gardens, coffee, and scenic roads.",
+        "bestTime": "June to September",
+        "highlight": "Coffee experiences",
+        "estimatedCost": "$150+",
+        "distance": "300 km",
+        "activities": [
+            "Coffee Tours",
+            "Hikes",
+            "Market Visits"
+        ],
+        "image": "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 14,
+        "name": "Lake Victoria",
+        "region": "Central",
+        "category": "Water",
+        "description": "The largest lake in Africa, offering relaxing shorelines, fishing villages, and unforgettable sunset views.",
+        "bestTime": "Year-round",
+        "highlight": "Sunset cruises",
+        "estimatedCost": "$140+",
+        "distance": "48 km",
+        "activities": [
+            "Boat Tours",
+            "Fishing",
+            "Sunset Watching"
+        ],
+        "image": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+        "id": 15,
+        "name": "Rwenzori Mountains",
+        "region": "Western",
+        "category": "Adventure",
+        "description": "A dramatic mountain range known for glaciers, alpine trails, and unforgettable high-altitude adventures.",
+        "bestTime": "June to September",
+        "highlight": "Mountain hiking",
+        "estimatedCost": "$900+",
+        "distance": "425 km",
+        "activities": [
+            "Trekking",
+            "Camping",
+            "Peak Views"
+        ],
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+    }
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Request Submitted | Explore Uganda</title>
+    <meta name="description" content="Confirmation page for a submitted trip request to Explore Uganda." />
+    <meta name="author" content="Otema Isaac" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles/final.css" />
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-mark">U</div>
+                <span>Explore Uganda</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="planner.html">Travel Planner</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <h1>Thank you for your trip request!</h1>
+            <p>Your travel details have been received and are ready for review.</p>
+            <div id="form-results" class="alert"></div>
+            <p><a class="primary-btn" href="index.html">Return home</a></p>
+        </section>
+    </main>
+
+    <script type="module">
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name') || 'Traveler';
+        const tripType = params.get('trip-type') || 'Adventure';
+        const duration = params.get('duration') || '5';
+        const notes = params.get('notes') || 'No additional notes';
+        const results = document.querySelector('#form-results');
+        results.innerHTML = `Thank you, ${name}. We have noted your ${tripType} plan for ${duration} days. Your interests: ${notes}.`;
+    </script>
+</body>
+
+</html>
