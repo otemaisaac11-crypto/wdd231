@@ -45,6 +45,13 @@ main {
     margin-top: 1.25rem;
 }
 
+.navigation li a.active,
+.navigation li a[aria-current="page"] {
+    color: var(--accent);
+    font-weight: 700;
+    border-bottom: 2px solid var(--accent);
+}
+
 .discover-card {
     min-height: 320px;
     overflow: hidden;
@@ -53,12 +60,16 @@ main {
     background: white;
     box-shadow: 0 18px 40px rgba(4, 17, 57, 0.06);
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "image"
+        "content";
+    gap: 0.85rem;
 }
 
 .discover-card figure {
     margin: 0;
     overflow: hidden;
+    grid-area: image;
 }
 
 .discover-card img {
@@ -72,6 +83,7 @@ main {
     padding: 1rem 1rem 1.25rem;
     display: grid;
     gap: 0.85rem;
+    grid-area: content;
 }
 
 .discover-card h2 {
@@ -154,6 +166,57 @@ main {
     .discover-card {
         min-height: 320px;
     }
+
+    .discover-card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "content";
+    }
+
+    .card-a {
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-areas: "image content";
+    }
+
+    .card-b {
+        grid-template-columns: 1fr 1.3fr;
+        grid-template-areas: "content image";
+    }
+
+    .card-c {
+        grid-template-columns: 1.25fr 1fr;
+        grid-template-areas: "image content";
+    }
+
+    .card-d {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "content";
+    }
+
+    .card-e {
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-areas: "content image";
+    }
+
+    .card-f {
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas: "image content";
+    }
+
+    .card-g {
+        grid-template-columns: 1fr 1.1fr;
+        grid-template-areas: "content image";
+    }
+
+    .card-h {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "content";
+    }
 }
 
 @media (min-width: 1025px) {
@@ -162,6 +225,33 @@ main {
         grid-template-areas:
             "a b c d"
             "e f g h";
+    }
+
+    .discover-card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "content";
+    }
+
+    .card-a,
+    .card-c,
+    .card-f,
+    .card-h {
+        grid-template-columns: 1.4fr 1fr;
+        grid-template-areas: "image content";
+    }
+
+    .card-b,
+    .card-e,
+    .card-g {
+        grid-template-columns: 1fr 1.4fr;
+        grid-template-areas: "content image";
+    }
+
+    .discover-card figure,
+    .discover-card .card-content {
+        min-height: auto;
     }
 }
 

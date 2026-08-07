@@ -36,7 +36,7 @@ function renderDiscoverCards() {
         card.className = `discover-card card card-${item.id}`;
         card.innerHTML = `
             <figure>
-                <img src="images/${item.image}" alt="${item.imageAlt}" loading="lazy" width="300" height="200">
+                <img src="images/hero-image.webp" alt="${item.imageAlt}" loading="lazy" width="300" height="200">
             </figure>
             <div class="card-content">
                 <h2>${item.name}</h2>
