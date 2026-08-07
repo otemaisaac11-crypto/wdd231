@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8bc4ff"/>
+      <stop offset="100%" stop-color="#fff3cf"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3c8a50"/>
+      <stop offset="100%" stop-color="#7aac64"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <ellipse cx="600" cy="900" rx="900" ry="320" fill="url(#grass)"/>
+  <path d="M140 620 q120 -160 260 0" fill="#29502f"/>
+  <path d="M920 620 q120 -160 260 0" fill="#29502f"/>
+  <path d="M300 520 q120 -120 260 0 q80 50 160 0 q120 -120 260 0" fill="#4ea15e"/>
+  <path d="M400 560 l120 -60 l80 36 l80 -40 l120 58 v120 h-400z" fill="#2b4232"/>
+  <path d="M620 520 q40 -160 240 -240 q80 -20 100 80 q20 120 -60 200 q-140 120 -280 -40" fill="#2b4232"/>
+  <path d="M520 500 q70 -80 170 -70 q70 10 110 70 q-30 60 -110 70 q-80 0 -170 -70" fill="#fff" opacity="0.8"/>
+  <circle cx="585" cy="465" r="45" fill="#2b4232"/>
+  <path d="M580 550 q40 30 90 10 q20 -10 40 -40 q20 -40 0 -80 q-40 -90 -130 -70 q-20 5 -40 25 q-10 15 -10 45 q0 60 50 110" fill="#2b4232"/>
+  <path d="M400 555 q60 -20 120 20 q30 30 20 60 q-20 40 -90 40 q-70 0 -90 -70" fill="#2b4232"/>
+  <circle cx="450" cy="590" r="30" fill="#fff" opacity="0.8"/>
+  <ellipse cx="525" cy="650" rx="120" ry="24" fill="#1f331c" opacity="0.6"/>
+  <text x="600" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="60" fill="#ffffff" font-weight="700">Explore Uganda</text>
+  <text x="600" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#ffffff">Discover the Pearl of Africa</text>
+</svg>
